@@ -7,7 +7,7 @@ angular.module('sportscorp.controllers', [])
 
 })
   .controller('loginCtrl', ['$scope', function($scope) {
-
+    $scope.showReg = false;
   }])
   .controller('calCtrl', ['$scope', function($scope) {
 
