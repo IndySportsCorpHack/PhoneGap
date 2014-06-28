@@ -32,9 +32,9 @@
     <title>Sports Corporation Volunteer Mobile Application</title>
 </head>
 <body ng-app="sportscorp" ng-controller="appCtrl">
-{{test}}
     <div sports-navigation></div>
     <div ng-view></div>
+    <div sports-achievements description=""></div>
     <script type="text/javascript" src="cordova.js"></script>
     <script src="vendor/jquery/dist/jquery.min.js"></script>
     <script src="vendor/jquery.transit/jquery.transit.js"></script>
@@ -47,5 +47,36 @@
     <script src="js/controllers.js"></script>
     <script src="js/filters.js"></script>
     <script src="js/directives.js"></script>
+    <script>
+    $(function(){
+        // $.ajax({
+        //     url: 'http://afternoon-depths-8369.herokuapp.com/events/eventlist',
+        //     type: 'GET',
+        //     crossDomain: true,
+        //     dataType: 'json',
+        //     success: function(resp) { 
+        //         console.log('success GET');
+        //         console.log(resp);
+        //     },
+        //     error: function() { alert('Failed!'); }
+        // });
+        // $.ajax({
+        //     url: 'http://afternoon-depths-8369.herokuapp.com/events/eventlist',
+        //     type: 'POST',
+        //     headers: {
+        //         "Access-Control-Allow-Origin":"*"
+        //     },
+        //     crossDomain: true,
+        //     dataType: 'json',
+        //     success: function(resp) {
+        //         console.log('success POST');
+        //         console.log(resp);
+        //     },
+        //     error: function() {
+        //         console.log('failed POST');
+        //     }
+        // });
+    });
+    </script>
 </body>
 </html>

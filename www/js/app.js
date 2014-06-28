@@ -9,15 +9,15 @@ angular.module('sportscorp', [
   'sportscorp.directives',
   'sportscorp.controllers',
   'ngRoute'
-]).
-config(['$routeProvider', function($routeProvider) {
+])
+.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/login', {templateUrl: 'partials/login.html', 
   								 controller: 'loginCtrl'});
   $routeProvider.when('/dashboard', {templateUrl: 'partials/dashboard.html',
   								 controller: 'dashboardCtrl'});
   $routeProvider.when('/calendar', {templateUrl: 'partials/calendar.html',
                    controller: 'calCtrl'});
-  $routeProvider.when('/event', {templateUrl: 'partials/event.html',
+  $routeProvider.when('/event', {templateUrl: 'partials/events.html',
                    controller: 'eventCtrl'});
   $routeProvider.when('/event-detail/:eventId', {templateUrl: 'partials/event-detail.html',
                    controller: 'eventCtrl'});

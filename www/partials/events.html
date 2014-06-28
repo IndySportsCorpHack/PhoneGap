@@ -1,0 +1,19 @@
+<div>
+	<h1 class="col-xs-12">Events page</h1>
+	<!-- {{activities | json}} -->
+	<div class="panel panel-default" ng-repeat="event in events" ng-hide="">
+	  <div class="panel-heading">{{event.name}}</div>
+	  <div class="panel-body">
+	    <p><strong>Type:</strong> {{event.event_type}}</p>
+		<p><strong>City:</strong> {{event.city}}</p>
+		<p><strong>Volunteers needed:</strong> {{event.volunteers_needed}}</p>
+		<p><strong>Start time:</strong> {{event.start_time}}</p>
+		<p><strong>End time:</strong> {{event.end_time}}</p>
+	    <a class="btn form-control btn-success" ng-click="accept()">ACCEPT</a>
+	  </div>
+	</div>
+	<br>
+	<hr>
+	<button class="btn btn-default col-xs-6" ng-click="more()">More</button>
+	<button class="btn btn-default col-xs-6" ng-click="less()">Less</button>
+</div>
