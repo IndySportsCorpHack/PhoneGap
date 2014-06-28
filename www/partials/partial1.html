@@ -1,1 +1,35 @@
-<p>This is the partial for view 1.</p>
+<p>
+	<h2>Sign In</h2>
+</p>
+<p>
+	<form>
+		Email: <input type="text" name="email"><br/>
+		Password: <input type="password" name="password"></h2>
+	</form>
+</p>
+<h2>Register</h2>
+<p>
+	<form id='registrationform' method='post' action=''>
+		First name: <input type="text" name="first_name"><br/>
+		Last name: <input type="text" name="last_name"><br/>
+		Age: <input type="text" name="age"><br/>
+		Email: <input type="email" name="email"><br/>
+		Mobile Phone Number: <input type="text" name ="mobile_phone"><br/>
+		<b>Location</b><br/>
+		City: <input type="text" name="city"><br/>
+		State: <input type="text" name="state"><br/>
+		Zip Code: <input type="text" name="zip"><br/>
+
+		Event Type:
+		<input list="event_types">
+		<datalist id="event_types">
+			<option value="Basketball">
+			<option value="Football">
+			<option value="Baseball">
+			<option value="Curling">
+			<option value="Soccer">
+		</datalist><br/>
+		Password: <input type="password" name="password"><br/>
+	<input type='submit' name='Submit' value='Submit' />
+	</form>
+</p>
