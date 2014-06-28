@@ -29,5 +29,8 @@
     "font-awesome": "~4.1.0",
     "bootswatch-dist": "~3.1.1-yeti",
     "bootswatch": "~3.2.0"
+  },
+  "resolutions": {
+    "bootstrap": "~3.2.0"
   }
 }

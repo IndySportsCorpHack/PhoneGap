@@ -2,35 +2,18 @@
 	<h2>Sign In</h2>
 </p>
 <p>
-	<form id='login' method='post' action=''>
-		Email: <input type="text" name="email"><br/>
-		Password: <input type="password" name="password">
-		<input type='submit' name='Submit' value='Submit' />
-	</form>
-</p><br/><br/>
-<h2>Register</h2>
-<p>
-	<form id='registration' method='post' action=''>
-		First name: <input type="text" name="first_name"><br/>
-		Last name: <input type="text" name="last_name"><br/>
-		Age: <input type="text" name="age"><br/>
-		Email: <input type="email" name="email"><br/>
-		Mobile Phone Number: <input type="text" name ="mobile_phone"><br/>
-		<b>Location</b><br/>
-		City: <input type="text" name="city"><br/>
-		State: <input type="text" name="state"><br/>
-		Zip Code: <input type="text" name="zip"><br/>
+    <div class="container">
 
-		Event Type:
-		<input list="event_types">
-		<datalist id="event_types">
-			<option value="Basketball">
-			<option value="Football">
-			<option value="Baseball">
-			<option value="Curling">
-			<option value="Soccer">
-		</datalist><br/>
-		Password: <input type="password" name="password"><br/>
-	<input type='submit' name='Submit' value='Submit' />
-	</form>
+      <form class="form-signin" role="form">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="email" name='email' class="form-control" placeholder="Email address" required autofocus><br/>
+        <input type="password" name='password' class="form-control" placeholder="Password" required>
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+
+    </div>
 </p>
+
