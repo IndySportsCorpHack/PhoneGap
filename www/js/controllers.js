@@ -3,9 +3,21 @@
 /* Controllers */
 
 angular.module('hseSportsApp.controllers', [])
-  .controller('MyCtrl1', ['$scope', function($scope) {
+  .controller('loginCtrl', ['$scope', function($scope) {
 
   }])
-  .controller('MyCtrl2', ['$scope', function($scope) {
+  .controller('calCtrl', ['$scope', function($scope) {
+
+  }])
+  .controller('eventCtrl', ['$scope', function($scope) {
+
+  }])
+  .controller('profileCtrl', ['$scope', function($scope) {
+
+  }])
+  .controller('awardCtrl', ['$scope', function($scope) {
+
+  }])
+  .controller('dashboardCtrl', ['$scope', function($scope) {
 
   }]);

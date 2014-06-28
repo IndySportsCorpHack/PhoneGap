@@ -2,17 +2,25 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('hseSportsApp', [
+angular.module('hseSportsCorp', [
   'ngRoute',
-  'hseSportsApp.filters',
-  'hseSportsApp.services',
-  'hseSportsApp.directives',
-  'hseSportsApp.controllers'
+  'hseSportsCorp.filters',
+  'hseSportsCorp.services',
+  'hseSportsCorp.directives',
+  'hseSportsCorp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {templateUrl: 'partials/login.html', 
-  								 controller: 'MyCtrl1'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html',
-  								 controller: 'MyCtrl2'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.when('/login', {templateUrl: 'partials/login.html', 
+  								 controller: 'loginCtrl'});
+  $routeProvider.when('/dashboard', {templateUrl: 'partials/dashboard.html',
+  								 controller: 'dashboardCtrl'});
+  $routeProvider.when('/calendar', {templateUrl: 'partials/calendar.html',
+                   controller: 'calCtrl'});
+  $routeProvider.when('/event', {templateUrl: 'partials/event.html',
+                   controller: 'eventCtrl'});
+  $routeProvider.when('/award', {templateUrl: 'partials/award.html',
+                   controller: 'awardCtrl'});
+  $routeProvider.when('/profile', {templateUrl: 'partials/profile.html',
+                   controller: 'profileCtrl'});
+  $routeProvider.otherwise({redirectTo: '/login'});
 }]);
