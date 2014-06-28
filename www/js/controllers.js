@@ -2,6 +2,7 @@
 
 /* Controllers */
 
+<<<<<<< HEAD
 angular.module('hseSportsApp.controllers', [])
   .controller('loginCtrl', ['$scope', function($scope) {
 
@@ -19,5 +20,12 @@ angular.module('hseSportsApp.controllers', [])
 
   }])
   .controller('dashboardCtrl', ['$scope', function($scope) {
+=======
+angular.module('sportscorp.controllers', [])
+.controller('MyCtrl1', ['$scope', function($scope) {
+
+}])
+  .controller('MyCtrl2', ['$scope', function($scope) {
+>>>>>>> fe59f11f585602b637e5f232d05c495c3f737317
 
   }]);

@@ -3,8 +3,8 @@
 /* Directives */
 
 
-angular.module('hseSportsApp.directives', []).
-  directive('appVersion', ['version', function(version) {
+angular.module('sportscorp.directives', [])
+.directive('appVersion', ['version', function(version) {
     return function(scope, elm, attrs) {
       elm.text(version);
     };
