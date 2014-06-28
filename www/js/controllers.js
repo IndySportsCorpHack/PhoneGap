@@ -3,6 +3,9 @@
 /* Controllers */
 
 angular.module('sportscorp.controllers', [])
+.controller('appCtrl', function($scope){
+  
+})
   .controller('loginCtrl', ['$scope', function($scope) {
 
   }])
@@ -20,4 +23,7 @@ angular.module('sportscorp.controllers', [])
   }])
   .controller('dashboardCtrl', ['$scope', function($scope) {
 
-  }]);
+  }])
+  .controller("NavCtrl", function ($scope, Navigation) {
+  $scope.navs = Navigation.list();
+});

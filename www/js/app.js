@@ -19,6 +19,8 @@ config(['$routeProvider', function($routeProvider) {
                    controller: 'calCtrl'});
   $routeProvider.when('/event', {templateUrl: 'partials/event.html',
                    controller: 'eventCtrl'});
+  $routeProvider.when('/event-detail/:eventId', {templateUrl: 'partials/event-detail.html',
+                   controller: 'eventCtrl'});
   $routeProvider.when('/award', {templateUrl: 'partials/award.html',
                    controller: 'awardCtrl'});
   $routeProvider.when('/profile', {templateUrl: 'partials/profile.html',

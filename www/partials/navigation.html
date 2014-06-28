@@ -1,0 +1,15 @@
+<nav ng-controller="NavCtrl">
+    <div id="navBar" class="navbar navbar-default row" role="navigation">
+        <div class="col-xs-10 pull-left">
+            <h3><a id="hselogo" ng-click="closeNavIfOpen()" href="#/main">Sports Corp Volunteer App</a></h3>
+        </div>
+        <div id="navBtn" class="col-xs-2 pull-right">
+            <i class="fa fa-bars fa-3x pull-right"></i>
+        </div>
+    </div>
+    <div id="navMenuContainer" class="row">
+        <div id="navMenu" ng-click="toggleNavOpen()">
+            <a ng-repeat="nav in navs" ng-click="close()" class="btn btn-primary form-control" href="#{{nav.href}}">{{}}{{nav.name}}</a>
+        </div>
+    </div>
+</nav>
