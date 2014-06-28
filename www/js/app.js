@@ -2,12 +2,12 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('hseSportsApp', [
-  'ngRoute',
-  'hseSportsApp.filters',
-  'hseSportsApp.services',
-  'hseSportsApp.directives',
-  'hseSportsApp.controllers'
+angular.module('sportscorp', [
+  'sportscorp.filters',
+  'sportscorp.services',
+  'sportscorp.directives',
+  'sportscorp.controllers',
+  'ngRoute'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view1', {templateUrl: 'partials/login.html', 
